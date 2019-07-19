@@ -44,8 +44,6 @@ class CreateListingsTable extends Migration
      */
     public function down()
     {
-        Schema::table('listings', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('listings');
     }
 }
